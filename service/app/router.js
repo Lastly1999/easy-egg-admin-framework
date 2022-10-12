@@ -5,4 +5,5 @@
  */
 module.exports = app => {
   app.post('/auth/login', app.controller.authController.login);
+  app.get('/user', app.controller.userController.all);
 };

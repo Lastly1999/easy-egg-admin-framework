@@ -38,7 +38,8 @@ module.exports = appInfo => {
     port: 3306,
     username: 'root',
     password: '123456',
-    database: 'egg-sequelize-doc-default',
+    freezeTableName: true,
+    database: 'egg-admin-default-db',
   };
 
   return {
