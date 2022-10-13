@@ -5,6 +5,9 @@
  */
 module.exports = app => {
   const { INTEGER, STRING, DATE } = app.Sequelize;
+  /**
+   *  用户表
+   */
   const User = app.model.define(
     'sys_user',
     {

@@ -5,6 +5,10 @@
  */
 module.exports = app => {
   const { INTEGER, DATE } = app.Sequelize;
+
+  /**
+   *  用户角色表
+   */
   const SysUserRole = app.model.define(
     'sys_user_role',
     {
