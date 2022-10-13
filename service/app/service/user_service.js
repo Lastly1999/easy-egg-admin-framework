@@ -14,7 +14,7 @@ module.exports = class UserService extends Service {
       where: { username, password },
     });
     if (!user) {
-      this.ctx.throw(500, '密码错误,请重新输入');
+      return this.ctx.helper.fail({ message: '用户名或密码错误' });
     }
     return user;
   }
