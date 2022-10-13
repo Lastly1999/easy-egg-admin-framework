@@ -42,6 +42,11 @@ module.exports = appInfo => {
     database: 'egg-admin-default-db',
   };
 
+  // jwt config
+  config.jwt = {
+    secret: '@!#$%^123123165312313212133',
+  };
+
   return {
     ...config,
     ...userConfig,
