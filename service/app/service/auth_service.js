@@ -15,20 +15,20 @@ module.exports = class AuthService extends Service {
         {
           model: ctx.model.SysRoleModel,
           as: 'role',
-          include: [
-            {
-              model: ctx.model.SysMenuModel,
-              as: 'menu',
-              attributes: [ 'id', 'name', 'path', 'icon', 'parentId' ],
-              through: {
-                attributes: [],
-              },
-            },
-          ],
+          // include: [
+          //   {
+          //     model: ctx.model.SysMenuModel,
+          //     as: 'menu',
+          //     attributes: [ 'id', 'name', 'path', 'icon', 'parentId' ],
+          //     through: {
+          //       attributes: [],
+          //     },
+          //   },
+          // ],
         },
       ],
     });
-    const menuList = user.role.menu;
-    return menuList;
+    // const menuList = user.role.menu;
+    return user;
   }
 };
