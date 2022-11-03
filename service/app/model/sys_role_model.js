@@ -23,5 +23,14 @@ module.exports = app => {
       tableName: 'sys_role',
     }
   );
+
+  // Role.aggregate = function() {
+  //   app.model.SysRoleModel.belongsToMany(app.model.SysUserModel, {
+  //     through: sys_user_role_model,
+  //     foreignKey: 'roleId',
+  //     otherKey: 'userId',
+  //   });
+  // };
+
   return Role;
 };

@@ -1,5 +1,6 @@
 'use strict';
 
+
 /**
  * @param {Egg.Application} app - egg application
  */
@@ -28,5 +29,14 @@ module.exports = app => {
       tableName: 'sys_user',
     }
   );
+
+  // User.aggregate = function() {
+  //   app.model.SysUserModel.belongsToMany(app.model.SysRoleModel, {
+  //     through: sys_user_role_model,
+  //     foreignKey: 'userId',
+  //     otherKey: 'roleId',
+  //   });
+  // };
+
   return User;
 };
