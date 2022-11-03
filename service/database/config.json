@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "root",
-    "password": "123456",
-    "database": "egg-admin-default-db",
-    "host": "192.168.154.128",
+    "password": "1234",
+    "database": "egg_admin_default_db",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "123456",
-    "database": "egg-admin-default-db",
-    "host": "192.168.154.128",
+    "password": "1234",
+    "database": "egg_admin_default_db",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "123456",
-    "database": "egg-admin-default-db",
-    "host": "192.168.154.128",
+    "password": "1234",
+    "database": "egg_admin_default_db",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   }
 }

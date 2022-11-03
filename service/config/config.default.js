@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1665500404762_9191';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [ 'errorHandler' ];
 
   // add your user config here
   const userConfig = {
@@ -34,12 +34,12 @@ module.exports = appInfo => {
 
   config.sequelize = {
     dialect: 'mysql',
-    host: '192.168.154.128',
+    host: '121.5.163.221',
     port: 3306,
     username: 'root',
     password: '123456',
     freezeTableName: true,
-    database: 'egg-admin-default-db',
+    database: 'easy_admin_crm',
   };
 
   // jwt config

@@ -1,5 +1,7 @@
 'use strict';
 
+const HttpException = require('../exception/http');
+
 const Service = require('egg').Service;
 
 module.exports = class UserService extends Service {
@@ -14,12 +16,9 @@ module.exports = class UserService extends Service {
       where: { username, password },
     });
     if (!user) {
-      return this.ctx.helper.fail({ message: '用户名或密码错误' });
+      throw new HttpException(401, '用户名或密码错误');
     }
     return user;
   }
 
-  async test() {
-    return await this.app.model.SysUserRoleModel.findAll({});
-  }
 };

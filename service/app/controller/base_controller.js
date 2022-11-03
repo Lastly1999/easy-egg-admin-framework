@@ -2,7 +2,7 @@
 
 const { Controller } = require('egg');
 
-module.exports = class BaseController extends Controller {
+class BaseController extends Controller {
   /**
    * 请求成功统一返回格式
    * @param root0
@@ -26,4 +26,6 @@ module.exports = class BaseController extends Controller {
   get jsonBody() {
     return this.ctx.request.body;
   }
-};
+}
+
+module.exports = BaseController;
